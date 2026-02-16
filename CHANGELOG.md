@@ -1,3 +1,22 @@
+## 4.7.2
+
+- Fixed 10-15 second delay when dismissing scanner on iOS 26+
+- Vendored MTBBarcodeScanner source with fix (no Podfile override required)
+- Root cause: AVCaptureVideoPreviewLayer.session = nil blocks on main thread waiting for camera pipeline sync
+
+## 4.6.0
+
+- Upgrade toolchain and fix iOS/Android compatibility issues(#114)
+
+## 4.5.3
+
+- Fixes issue with dismissing the view when cancel is clicked on ios(#113)
+
+## 4.5.2
+
+- protobuf 4.0.0(#109)
+- Update to Android 36(#112)
+
 ## 4.5.1
 
 - Fix Android build fails on Apple Silicon M3(#104, #105)
